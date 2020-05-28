@@ -1,0 +1,30 @@
+<p class="mb-3">
+  Value: {{contactForm.value | json}}
+</p>
+<section class="d-flex justify-content-center">
+  <div class="shadow container row customBackground">
+    <h2 class="position-relative text-center col-12 mt-3">Get In Contact</h2>
+    <div class="col-12 d-flex justify-content-center row">
+      <form class="form-group col-5 mt-5 ml-3" [formGroup]="contactForm" (ngSubmit)="onSubmit()" novalidate>
+        <label>Name</label>
+        <input class="form-control" formControlName="name">
+        <label>Email</label>
+        <input class="form-control" formControlName="email">
+        <label>Your Query</label>
+        <select class="custom-select" formControlName="requestType">
+          <option *ngFor="let requestType of requestTypes">
+            {{requestType}}
+          </option>
+        </select>
+        <label>Your Query</label>
+        <input class="form-control" formControlName="message">
+        <input class="form-control-file mt-3" type="file" (change)="uploadFile($event)">
+        <button class="btn btn-primary shadow mt-3 col-3" type="submit" [disabled]="contactForm.pristine">Test</button>
+        <!--  <button type="reset" (click)="revert()" [disabled]="contactForm.pristine">Reset</button>-->
+      </form>
+      <div class="col-6 ml-5">
+        <img src="assets/Images/test.jpg" class="img-fluid" alt="">
+      </div>
+    </div>
+  </div>
+</section>
