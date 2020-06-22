@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup} from '@angular/forms';
 import {HttpClient} from '@angular/common/http';
-import {ToastrService} from "ngx-toastr";
+import {ToastrService} from 'ngx-toastr';
 
 @Component({
   selector: 'app-contact',
@@ -29,14 +29,6 @@ export class ContactComponent implements OnInit {
     });
   }
 
-  revert() {
-    // Resets to blank object
-    this.contactForm.reset();
-
-    // Resets to provided model
-    this.contactForm.reset({ name: '', email: '', requestType: '', text: '' });
-  }
-
   onSubmit() {
     console.log(this.contactForm.value);
 
@@ -47,7 +39,7 @@ export class ContactComponent implements OnInit {
     formData.append('message', this.contactForm.get('message').value);
     formData.append('attachments', this.contactForm.get('attachments').value);
 
-    return this.http.post('http://localhost:5000/email', formData).subscribe(res => {
+    return this.http.post('http://localhost:5000/api/email', formData).subscribe(res => {
       console.log(res);
       this.toast.success('Thank you for contacting us');
     }, error => {
