@@ -2,3 +2,42 @@
   background: white;
   padding: 50px;
 }
+
+.styleCustom {
+  background-image: linear-gradient(to right, #ffac00 0%, #ff8b00 100%);
+  color: #ffffff;
+
+  &:hover {
+    background-image: linear-gradient(to right, #e39a00 0%, #e87e00 100%);
+    transition: 0.5s ease;
+  }
+}
+
+#upload {
+  opacity: 0;
+}
+
+#upload-label {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  transform: translateY(-50%);
+}
+
+.blockquote-custom {
+  position: relative;
+  font-size: 1.1rem;
+}
+
+.blockquote-custom-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -25px;
+  left: 50px;
+  background: #ff8b00;
+}

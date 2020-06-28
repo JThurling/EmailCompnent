@@ -1,0 +1,13 @@
+.styleCustom {
+  background-image: linear-gradient(to right, #ffac00 0%, #ff8b00 100%);
+  color: #ffffff;
+
+  &:hover {
+    background-image: linear-gradient(to right, #e39a00 0%, #e87e00 100%);
+    transition: 0.5s ease;
+  }
+}
+
+.customStyle {
+  color: #ff8b00;
+}

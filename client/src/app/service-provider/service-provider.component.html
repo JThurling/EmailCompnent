@@ -1,0 +1,163 @@
+<div class="bg-white">
+  <div class="container py-5">
+    <div class="row h-100 align-items-center py-5">
+      <div class="col-xl-6 d-none d-lg-block pr-5"><img src="./assets/Images/service/service.png" alt="" class="img-fluid mx-auto d-block" ></div>
+      <div class="col-xl-6 pl-5">
+        <h1 class="display-4">Keen to join our Service Provider network?</h1>
+        <br>
+        <p class="lead mb-0">
+          We’re always keen to grow our network of service providers. If you believe yourself or your company would benefit from working with CAN, please forward your details through to us.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <h2 class="mb-5 display-4 text-center">Make your own success</h2>
+    <div class="row pb-5">
+      <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+        <!-- Services Item-->
+        <div class="card border-0 shadow rounded-lg py-4 text-center h-100">
+          <div class="card-body p-5">
+            <i class="fa fa-building mb-3 customStyle" style="font-size: 3em;"></i>
+            <h3 class="font-weight-normal h4 my-4">Generate Business Opportunities</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+        <!-- Services Item-->
+        <div class="card border-0 shadow rounded-lg py-4 text-center h-100">
+          <div class="card-body p-5">
+            <i class="fa fa-globe mb-3 customStyle" style="font-size: 3em;"></i>
+            <h3 class="font-weight-normal h4 my-4">National Growth Opportunity</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <!-- Services Item-->
+        <div class="card border-0 shadow rounded-lg py-4 text-center h-100">
+          <div class="card-body p-5">
+            <i class="fa fa-bullhorn mb-3 customStyle" style="font-size: 3em;"></i>
+            <h3 class="font-weight-normal h4 my-4">Brand is Exposed via CAN</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row pb-5">
+      <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+        <!-- Services Item-->
+        <div class="card border-0 shadow rounded-lg py-4 text-center h-100">
+          <div class="card-body p-5 h-100">
+            <i class="fa fa-dollar mb-3 customStyle" style="font-size: 3em;"></i>
+            <h3 class="font-weight-normal h4 my-4">Stable Settlement Scheme</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+        <!--Services Item-->
+        <div class="card border-0 shadow rounded-lg py-4 text-center h-100">
+          <div class="card-body p-5 h-100">
+            <i class="fa fa-handshake-o mb-3 customStyle" style="font-size: 3em;"></i>
+            <h3 class="font-weight-normal h4 my-4">Collaborate with Other Service Providers</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <!-- Services Item-->
+        <div class="card border-0 shadow rounded-lg py-4 text-center h-100">
+          <div class="card-body p-5 h-100">
+            <i class="fa fa-check mb-3 customStyle" style="font-size: 3em;"></i>
+            <h3 class="font-weight-normal h4 my-4">Work with a Reputable Partner</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bg-white py-5">
+  <div class="container p-5">
+    <h1 class="display-4 text-center">Become a Service Provider</h1>
+    <h2 class="text-center mt-3">We appreciate your interest in working with CAN Infinity</h2>
+    <div class="row h-100 align-items-center py-5 mt-5">
+      <div class="col-lg-6 pr-5 d-none d-lg-block"><img src="./assets/Images/broker/mail.png" alt="" class="img-fluid"></div>
+      <div class="col-lg-6 form-box">
+        <form class="form-group" [formGroup]="serviceProviderForm" (ngSubmit)="onSubmit()">
+          <div class="p-2 bg-light rounded rounded-pill shadow-sm mb-4">
+            <div class="input-group">
+              <input formControlName="name" type="text" placeholder="What's your name?" aria-describedby="button-addon1" class="form-control border-0 bg-light">
+              <div class="input-group-append">
+                <button type="submit" class="btn btn-link text-primary"><i class="fa fa-user" style="color: #ff8b00"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-2 bg-light rounded rounded-pill shadow-sm mb-4">
+            <div class="input-group">
+              <input formControlName="companyName" type="text" placeholder="What's your company's name?" aria-describedby="button-addon1" class="form-control border-0 bg-light">
+              <div class="input-group-append">
+                <button type="submit" class="btn btn-link text-primary"><i class="fa fa-building" style="color: #ff8b00"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-2 bg-light rounded rounded-pill shadow-sm mb-4">
+            <div class="input-group">
+              <input formControlName="website" type="text" placeholder="Link to your website?" aria-describedby="button-addon1" class="form-control border-0 bg-light">
+              <div class="input-group-append">
+                <button type="submit" class="btn btn-link text-primary"><i class="fa fa-internet-explorer" style="color: #ff8b00"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-2 bg-light rounded rounded-pill shadow-sm mb-4">
+            <div class="input-group">
+              <input formControlName="email" type="text" placeholder="What's your email?" aria-describedby="button-addon1" class="form-control border-0 bg-light">
+              <div class="input-group-append">
+                <button type="submit" class="btn btn-link text-primary"><i class="fa fa-envelope" style="color: #ff8b00"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-2 bg-light rounded rounded-pill shadow-sm mb-4">
+            <div class="input-group">
+              <input formControlName="number" type="text" placeholder="What's your number?" aria-describedby="button-addon1" class="form-control border-0 bg-light">
+              <div class="input-group-append">
+                <button type="submit" class="btn btn-link text-primary"><i class="fa fa-phone" style="color: #ff8b00"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-2 bg-light rounded shadow-sm mb-4">
+            <div class="input-group">
+              <textarea formControlName="message" aria-describedby="button-addon1" class="form-control border-0 bg-light" rows="5" placeholder="What does your company do?"></textarea>
+              <div class="input-group-append">
+                <button type="submit" class="btn btn-link text-primary"><i class="fa fa-envelope-open" style="color: #ff8b00"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-2 bg-light rounded rounded-pill shadow-sm mb-4">
+            <div class="input-group">
+              <select class="form-control border-0 bg-light" formControlName="involvement">
+                <option>--Where would you like to be involved--</option>
+                <option *ngFor="let involved of involvement">
+                  {{involved}}
+                </option>
+              </select>
+            </div>
+          </div>
+          <!-- Upload image input-->
+          <div class="input-group mb-3 px-2 py-2 rounded-pill bg-white shadow-sm">
+            <input id="upload" type="file" (change)="uploadFile($event)" class="form-control border-0">
+            <label id="upload-label" for="upload" class="font-weight-light text-muted">Supporting Documentation</label>
+            <div class="input-group-append">
+              <label for="upload" class="btn btn-light m-0 rounded-pill px-4"> <i class="fa fa-cloud-upload mr-2 text-muted"></i><small class="text-uppercase font-weight-bold text-muted">Choose file</small></label>
+            </div>
+          </div>
+
+          <button class="btn btn-light px-5 rounded-pill shadow-sm mt-3 styleCustom" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

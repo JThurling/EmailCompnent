@@ -1,0 +1,244 @@
+<section class="py-5 header bg-white">
+  <div class="container py-5">
+    <div class="row h-100 align-items-center py-5">
+      <div class="col-xl-6 d-none d-lg-block pr-5"><img src="./assets/Images/intermediary/intermediaryBroker.png" alt="" class="img-fluid mx-auto d-block" ></div>
+      <div class="col-xl-6 pl-5">
+        <h1 class="display-4">Keen to join our network?</h1>
+        <br>
+        <p class="lead mb-0">
+          Despite an already established network of Brokers, we’re always on the lookout for capable individuals who are eager to learn more about our business and make some money on the side: could that be you?
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="mb-5 display-4 text-center">Just follow these simple steps</h2>
+
+  <div class="container py-4">
+    <div class="row">
+      <div class="col-md-12">
+        <!-- Tabs nav -->
+        <div class="nav flex-column nav-pills nav-pills-custom" id="v-pills-tab" role="tablist"
+             aria-orientation="vertical">
+          <div class="row">
+            <div class="col-sm">
+              <a (click)="stepOne()" [class.active]="stepOneOpen" class="text-center nav-link mb-3 p-3 shadow" style="cursor: pointer" id="v-pills-home-tab"
+                 data-toggle="pill" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                <span class="font-weight-bold  text-uppercase">Step One</span></a>
+            </div>
+            <div class="col-sm">
+              <a (click)="stepTwo()" [class.active]="stepTwoOpen" class="text-center nav-link mb-3 p-3 shadow" style="cursor: pointer" data-toggle="pill"
+                 role="tab" aria-controls="v-pills-profile" aria-selected="false">
+                <span class="font-weight-bold text-uppercase">Step Two</span></a>
+            </div>
+            <div class="col-sm">
+              <a (click)="stepThree()" [class.active]="stepThreeOpen" class="text-center nav-link mb-3 p-3 shadow" style="cursor: pointer" data-toggle="pill"
+                 role="tab" aria-controls="v-pills-messages" aria-selected="false">
+                <span class="font-weight-bold text-uppercase">Step Three</span></a>
+            </div>
+            <div class="col-sm">
+              <a (click)="stepFour()" [class.active]="stepFourOpen" class="text-center nav-link mb-3 p-3 shadow" style="cursor: pointer" data-toggle="pill"
+                 role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                <span class="font-weight-bold text-uppercase">Step Four</span>
+              </a>
+
+            </div>
+            <div class="col-sm">
+              <a (click)="stepFive()" [class.active]="stepFiveOpen" class="text-center nav-link mb-3 p-3 shadow" style="cursor: pointer" data-toggle="pill"
+                 role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                <span class="font-weight-bold text-uppercase">Step Five</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-12">
+        <!-- Tabs content -->
+        <div class="">
+          <div *ngIf="stepOneOpen" [class.show]="stepOneOpen" class="fade shadow rounded bg-white p-5">
+            <h4 class="mb-4">Step One</h4>
+            <p class="lead text-muted mb-2">Send in your contact form via the website.
+            Afterwards, you'll recieve an application form than needs to be filled out and returned to CAN</p>
+          </div>
+
+          <div *ngIf="stepTwoOpen" [class.show]="stepTwoOpen" class="tab-pane fade shadow rounded active bg-white p-5">
+            <h4 class="mb-4">Step Two</h4>
+            <p class="lead text-muted mb-2">Next, a test will be scheduled with you to determine whether you understand all our policies and product range</p>
+          </div>
+
+          <div *ngIf="stepThreeOpen" [class.show]="stepThreeOpen"
+               class="tab-pane fade shadow rounded active bg-white p-5">
+            <h4 class="mb-4">Step Three</h4>
+            <p class="lead text-muted mb-2">A feedback session will follow soon after the test - analysing your strong and weak points,
+            or giving your the change to retest.</p>
+          </div>
+
+          <div *ngIf="stepFourOpen" [class.show]="stepFourOpen"
+               class="tab-pane fade shadow active rounded bg-white p-5">
+            <h4 class="mb-4">Step Four</h4>
+            <p class="lead text-muted mb-2">After completing the testing round, you'll then come in and we'll calibrate your
+            laptop with the software you'll use as a broker.</p>
+          </div>
+
+          <div *ngIf="stepFiveOpen" [class.show]="stepFiveOpen"
+               class="tab-pane fade shadow rounded active bg-white p-5">
+            <h4 class="mb-4">Step Five</h4>
+            <p class="lead text-muted mb-2">Finally, after setting your equipment up, we'll host a brief orientation session to train
+            you in the software and help you begin your journey.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container py-5">
+    <div class="row h-100 align-items-center py-5">
+      <div class="col-xl-6 pl-5">
+        <h1 class="display-4">Ideal candidates</h1>
+        <br>
+        <ul class="text-muted">
+          <li class="list-unstyled my-2">Aged (30+).</li>
+          <li class="list-unstyled my-2">Excellent communications skills.</li>
+          <li class="list-unstyled my-2">Target driven.</li>
+          <li class="list-unstyled my-2">Structured and organised.</li>
+          <li class="list-unstyled my-2">Good time management skills.</li>
+          <li class="list-unstyled my-2"> Pay attention to detail.</li>
+          <li class="list-unstyled my-2">Are a team-player.</li>
+          <li class="list-unstyled my-2">Keen to learn CAN service policies and legal processes. </li>
+          <li class="list-unstyled my-2">Excellent interpersonal and customer service skills.</li>
+          <li class="list-unstyled my-2">Are computer literate (MS Office and Outlook).</li>
+        </ul>
+      </div>
+      <div class="col-xl-6 d-none d-lg-block pl-5">
+        <img src="./assets/Images/intermediary/broker.png">
+        <a (click)="onModal(template)" class="animated-btn text-white customPlacement"><i class="fa fa-play"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container py-5">
+    <h1 class="display-4 text-center" >How We Can Help You</h1>
+    <br>
+    <div class="row h-100 align-items-center py-5">
+      <div class="row pb-5">
+          <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+            <!-- Services Item-->
+            <div class="card border-0 shadow rounded-lg py-4 text-center h-100">
+              <div class="card-body p-5 h-100">
+                <i class="fa fa-dollar mb-3 customStyle" style="font-size: 3em;"></i>
+                <h3 class="font-weight-normal h4 my-4">Stable Commision Structure</h3>
+                <p class="lead">We offer you 50% of whatever you sell, plus a recurring monthly commission per package sold.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+            <!--Services Item-->
+            <div class="card border-0 shadow rounded-lg py-4 text-center h-100">
+              <div class="card-body p-5 h-100">
+                <i class="fa fa-book mb-3 customStyle" style="font-size: 3em;"></i>
+                <h3 class="font-weight-normal h4 my-4">Training is Provided</h3>
+                <p class="lead">We give you all the necessary training that you'd need - you'll also have a fully capable team to answer any questions you have. </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <!-- Services Item-->
+            <div class="card border-0 shadow rounded-lg py-4 text-center h-100">
+              <div class="card-body p-5 h-100">
+                <i class="fa fa-check mb-3 customStyle" style="font-size: 3em;"></i>
+                <h3 class="font-weight-normal h4 my-4">Interact with an Experienced Company</h3>
+                <p class="lead">CAN Infinity Assistance has been around since 2003 and are proud of our reputation that's second to none.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      <div class="row pb-5">
+          <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+            <!-- Services Item-->
+            <div class="card border-0 shadow rounded-lg py-4 text-center h-100">
+              <div class="card-body p-5 h-100">
+                <i class="fa fa-clock-o mb-3 customStyle" style="font-size: 3em;"></i>
+                <h3 class="font-weight-normal h4 my-4">Flexi Hours</h3>
+                <p class="lead">You choose your working hours, as well as where you work - You're the boss. </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+            <!--Services Item-->
+            <div class="card border-0 shadow rounded-lg py-4 text-center h-100">
+              <div class="card-body p-5 h-100">
+                <i class="fa fa-child mb-3 customStyle" style="font-size: 3em;"></i>
+                <h3 class="font-weight-normal h4 my-4">Opportunities for Growth</h3>
+                <p class="lead">The harder you work, the more clients you'll have - at some point you might need to even employ staff!</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <!-- Services Item-->
+            <div class="card border-0 shadow rounded-lg py-4 text-center h-100">
+              <div class="card-body p-5 h-100">
+                <i class="fa fa-money mb-3 customStyle" style="font-size: 3em;"></i>
+                <h3 class="font-weight-normal h4 my-4">No Start-up Needed</h3>
+                <p class="lead">With this opportunity you need no capitol, no joining fees, no franchise fees - no strings attached.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="container p-5">
+    <h1 class="display-4 text-center">Become part of the team</h1>
+    <h2 class="text-center mt-3">We appreciate your interest in working with CAN Infinity</h2>
+    <div class="row h-100 align-items-center py-5 mt-5">
+      <div class="col-lg-6 pr-5 d-none d-lg-block"><img src="./assets/Images/broker/mail.png" alt="" class="img-fluid"></div>
+      <div class="col-lg-6 form-box">
+        <form class="form-group" [formGroup]="intermediateBrokerForm" (ngSubmit)="onSubmit()">
+          <div class="p-2 bg-light rounded rounded-pill shadow-sm mb-4">
+            <div class="input-group">
+              <input formControlName="name" type="text" placeholder="What's your name?" aria-describedby="button-addon1" class="form-control border-0 bg-light">
+              <div class="input-group-append">
+                <button type="submit" class="btn btn-link text-primary"><i class="fa fa-user" style="color: #ff8b00"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-2 bg-light rounded rounded-pill shadow-sm mb-4">
+            <div class="input-group">
+              <input formControlName="email" type="text" placeholder="What's your email?" aria-describedby="button-addon1" class="form-control border-0 bg-light">
+              <div class="input-group-append">
+                <button type="submit" class="btn btn-link text-primary"><i class="fa fa-envelope" style="color: #ff8b00"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-2 bg-light rounded rounded-pill shadow-sm mb-4">
+            <div class="input-group">
+              <input formControlName="phoneNumber" type="text" placeholder="What's your number?" aria-describedby="button-addon1" class="form-control border-0 bg-light">
+              <div class="input-group-append">
+                <button type="submit" class="btn btn-link text-primary"><i class="fa fa-phone" style="color: #ff8b00"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Upload image input-->
+          <div class="input-group mb-3 px-2 py-2 rounded-pill bg-white shadow-sm">
+            <input id="upload" type="file" (change)="uploadFile($event)" class="form-control border-0">
+            <label id="upload-label" for="upload" class="font-weight-light text-muted">Please Upload CV</label>
+            <div class="input-group-append">
+              <label for="upload" class="btn btn-light m-0 rounded-pill px-4"> <i class="fa fa-cloud-upload mr-2 text-muted"></i><small class="text-uppercase font-weight-bold text-muted">Choose file</small></label>
+            </div>
+          </div>
+
+          <button class="btn btn-light px-5 rounded-pill shadow-sm mt-3 styleCustom" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<ng-template #template>
+  <iframe height="400" src="https://www.youtube.com/embed/_jXE9N9CTLE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</ng-template>
+

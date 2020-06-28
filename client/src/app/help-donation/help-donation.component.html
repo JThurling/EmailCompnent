@@ -1,0 +1,120 @@
+<div class="bg-white">
+  <div class="container py-5">
+    <div class="row h-100 align-items-center py-5">
+      <div class="col-lg-6">
+        <h1 class="display-4">Reach out to those in need</h1>
+        <p class="lead text-muted mb-0">Create a minimal about us page using Bootstrap 4.</p>
+        <accordion [isAnimated]="true">
+          <accordion-group heading="Static Header">
+            This content is straight in the template.
+          </accordion-group>
+          <accordion-group
+            heading="Another group"
+            [panelClass]="customClass">
+            <p>Some content</p>
+          </accordion-group>
+          <accordion-group heading="Another group">
+            <p>Some content</p>
+          </accordion-group>
+          <accordion-group heading="Another group">
+            <p>Some content</p>
+          </accordion-group>
+        </accordion>
+      </div>
+      <div class="col-lg-6 d-none d-lg-block"><img src="./assets/Images/donation/helping.png" alt="" class="img-fluid"></div>
+    </div>
+  </div>
+</div>
+
+<div class="bg-white">
+  <div class="container py-5">
+    <div class="row h-100 align-items-center py-5">
+      <div class="col-lg-6 d-none d-lg-block"><img src="./assets/Images/donation/box-donation.png" alt="" class="img-fluid"></div>
+      <div class="col-lg-6">
+        <h1 class="display-4">Groups & Foundations</h1>
+        <p class="lead text-muted mb-0">Create a minimal about us page using Bootstrap 4.</p>
+        <p class="lead text-muted">Snippet by <a href="https://bootstrapious.com/snippets" class="text-muted">
+          <u>Bootstrapious</u></a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bg-white">
+  <div class="container py-5">
+    <div class="row h-100 align-items-center py-5">
+      <div class="col-lg-6">
+        <h1 class="display-4">Give a Donation</h1>
+        <p class="lead text-muted mb-0">Create a minimal about us page using Bootstrap 4.</p>
+        <p class="lead text-muted">Snippet by <a href="https://bootstrapious.com/snippets" class="text-muted">
+          <u>Bootstrapious</u></a>
+        </p>
+      </div>
+      <div class="col-lg-6 d-none d-lg-block"><img src="./assets/Images/donation/donation.png" alt="" class="img-fluid"></div>
+    </div>
+  </div>
+</div>
+
+<div class="bg-white">
+  <div class="container py-5">
+    <div class="row h-100 align-items-center py-5">
+      <div class="col-lg-6 d-none d-lg-block"><img src="./assets/Images/donation/volunteer.png" alt="" class="img-fluid"></div>
+      <div class="col-lg-6">
+        <h1 class="display-4">Charity Projects</h1>
+        <p class="lead text-muted mb-0">Create a minimal about us page using Bootstrap 4.</p>
+        <p class="lead text-muted">Snippet by <a href="https://bootstrapious.com/snippets" class="text-muted">
+          <u>Bootstrapious</u></a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bg-white">
+  <div class="container py-5">
+    <div class="row h-100 align-items-center py-5">
+      <div class="col-lg-6">
+        <h1 class="display-4">Need any help?</h1>
+        <form [formGroup]="helpForm" (ngSubmit)="onSubmit()">
+          <label>Name</label>
+          <input formControlName="name" type="text">
+          <label>Email</label>
+          <input formControlName="email" type="text">
+          <label>Phone Number</label>
+          <input formControlName="phoneNumber"  type="text">
+          <label>ID Number</label>
+          <input formControlName="idNumber"  type="text">
+          <label>Pensioner</label>
+          <input formControlName="pensionerConfirmation" name="pension" type="radio" value="yes" checked> yes
+          <input formControlName="pensionerConfirmation" name="pension" type="radio" value="no"> no
+          <label>Number of Family Members</label>
+          <input formControlName="numberOfFamilyMembers" type="text">
+          <label>Province</label>
+          <select formControlName="province">
+            <option *ngFor="let province of province">
+              {{province}}
+            </option>
+          </select>
+          <label>Employment Status</label>
+          <select formControlName="employmentStatus">
+            <option *ngFor="let employment of employment">
+              {{employment}}
+            </option>
+          </select>
+          <label>Tell Us What's Wrong</label>
+          <textarea formControlName="message"></textarea>
+
+          <button type="submit">Click</button>
+        </form>
+      </div>
+      <div class="col-lg-6 d-none d-lg-block"><img src="./assets/Images/donation/mail.png" alt="" class="img-fluid"></div>
+    </div>
+  </div>
+</div>
+
+<p>
+  Value: {{helpForm.value | json}}
+</p>
+
+

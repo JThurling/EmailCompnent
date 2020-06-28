@@ -1,0 +1,52 @@
+.form-box{
+  height: 330px;
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  width: 5px;
+  background: #e2e2e2;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 1em;
+  background-image: linear-gradient(to top, #ffac00 0%, #ff8b00 100%);
+  background-color: #ddd;
+  outline: 1px solid slategrey;
+  border-radius: 1rem;
+}
+
+#upload {
+  opacity: 0;
+}
+
+#upload-label {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  transform: translateY(-50%);
+}
+
+@media (min-width: 1200px) {
+  .container{
+    max-width: 1300px;
+  }
+}
+
+.styleCustom {
+  background-image: linear-gradient(to right, #ffac00 0%, #ff8b00 100%);
+  color: #ffffff;
+
+  &:hover {
+    background-image: linear-gradient(to right, #e39a00 0%, #e87e00 100%);
+    transition: 0.5s ease;
+  }
+}
+
+.customStyle {
+  color: #ff8b00;
+}

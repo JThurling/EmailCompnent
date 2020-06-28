@@ -1,29 +1,96 @@
-<p class="mb-3">
-  Value: {{contactForm.value | json}}
-</p>
-<section class="d-flex justify-content-center">
-  <div class="shadow container row customBackground">
-    <h2 class="position-relative text-center col-12 mt-3">Get In Contact</h2>
-    <div class="col-12 d-flex justify-content-center row">
-      <form class="form-group col-5 mt-5 ml-3" [formGroup]="contactForm" (ngSubmit)="onSubmit()" novalidate>
-        <label>Name</label>
-        <input class="form-control" formControlName="name">
-        <label>Email</label>
-        <input class="form-control" formControlName="email">
-        <label>Your Query</label>
-        <select class="custom-select" formControlName="requestType">
-          <option *ngFor="let requestType of requestTypes">
-            {{requestType}}
-          </option>
-        </select>
-        <label>Your Query</label>
-        <textarea class="form-control" formControlName="message"></textarea>
-        <input class="form-control-file mt-3" type="file" (change)="uploadFile($event)">
-        <button class="btn btn-primary shadow mt-3 col-3" type="submit" [disabled]="contactForm.pristine">Test</button>
-        <!--  <button type="reset" (click)="revert()" [disabled]="contactForm.pristine">Reset</button>-->
-      </form>
-      <div class="col-6 ml-5">
-        <img src="assets/Images/test.jpg" class="img-fluid" alt="">
+<section class="py-5 bg-white">
+  <div class="container py-5">
+    <div class="row h-100 align-items-center py-5">
+      <div class="col-xl-6 d-none d-lg-block pr-5">
+        <form class="form-group" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+          <div class="p-2 bg-light rounded rounded-pill shadow-sm mb-4">
+            <div class="input-group">
+              <input formControlName="name" type="text" placeholder="What's your name?" aria-describedby="button-addon1"
+                     class="form-control border-0 bg-light">
+              <div class="input-group-append">
+                <button type="submit" class="btn btn-link text-primary"><i class="fa fa-user"
+                                                                           style="color: #ff8b00"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-2 bg-light rounded rounded-pill shadow-sm mb-4">
+            <div class="input-group">
+              <input formControlName="email" type="text" placeholder="What's your email?"
+                     aria-describedby="button-addon1" class="form-control border-0 bg-light">
+              <div class="input-group-append">
+                <button type="submit" class="btn btn-link text-primary"><i class="fa fa-envelope"
+                                                                           style="color: #ff8b00"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-2 bg-light rounded shadow-sm mb-4">
+            <div class="input-group">
+              <textarea formControlName="message" aria-describedby="button-addon1"
+                        class="form-control border-0 bg-light" rows="5"
+                        placeholder="What does your company do?"></textarea>
+              <div class="input-group-append">
+                <button type="submit" class="btn btn-link text-primary"><i class="fa fa-envelope-open"
+                                                                           style="color: #ff8b00"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-2 bg-light rounded rounded-pill shadow-sm mb-4">
+            <div class="input-group">
+              <select class="form-control border-0 bg-light" formControlName="requestType">
+                <option>--Reason for contacting--</option>
+                <option *ngFor="let requestType of requestTypes">
+                  {{requestType}}
+                </option>
+              </select>
+            </div>
+          </div>
+          <!-- Upload image input-->
+          <div class="input-group mb-3 px-2 py-2 rounded-pill bg-white shadow-sm">
+            <input id="upload" type="file" (change)="uploadFile($event)" class="form-control border-0">
+            <label id="upload-label" for="upload" class="font-weight-light text-muted">Supporting Documentation</label>
+            <div class="input-group-append">
+              <label for="upload" class="btn btn-light m-0 rounded-pill px-4"> <i
+                class="fa fa-cloud-upload mr-2 text-muted"></i><small
+                class="text-uppercase font-weight-bold text-muted">Choose file</small></label>
+            </div>
+          </div>
+
+          <button class="btn btn-light px-5 rounded-pill shadow-sm mt-3 styleCustom" type="submit">Submit</button>
+        </form>
+      </div>
+      <div class="col-xl-6 pl-5">
+        <h1 class="display-4">Talk to a Real Person</h1>
+        <br>
+        <p class="lead mb-0">
+          You’re not going to find some consultant reading a generic script. Your email won’t be lost in a pothole-sized
+          endless abyss of unread mail. At CAN Infinity Assistance, we aim to provide the most personal kind of service
+          at all times.
+        </p>
+        <br>
+        <br>
+        <blockquote class="blockquote blockquote-custom bg-white p-5 shadow rounded">
+          <div class="blockquote-custom-icon shadow-sm"><i class="fa fa-quote-left text-white"></i></div>
+          <p class="mb-0 mt-2 font-italic">"We begin relationships at CAN: 'Cause together we CAN achieve new heights,
+            together we CAN do it better."</p>
+          <footer class="blockquote-footer pt-4 mt-4 border-top">CAN Team
+          </footer>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-sm">
+        <p class="display-4">E-mail:</p>
+        <p class="lead"><a class="text-dark" href="mailto:info@carassistance.co.za">info@carassistance.co.za</a></p>
+      </div>
+      <div class="col-sm">
+        <p class="display-4">Emergency Assist:</p>
+        <p class="lead">011 801 0000</p>
       </div>
     </div>
   </div>
